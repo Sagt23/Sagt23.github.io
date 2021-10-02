@@ -1,0 +1,167 @@
+/*POR ETIQUETA*/
+body{
+    height: 900px;
+    background-color: black;
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+}
+h1{
+    color: rgb(0, 247, 255); 
+    font-weight: lighter;
+    margin-top: 200px;
+    text-align: center;
+    font-size: 100px;
+}
+h1 span{
+    color: white;
+}
+button{
+    background-color: burlywood;
+    color: black;
+}
+li{
+    color: white;
+}
+/*POR ID #*/
+#btnInicio{
+    width: 300px;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40%;
+    color: darkcyan;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: 30px;
+    box-shadow: 8px 24px 47px 0px rgba(218, 218, 218, 0.75);
+}
+/*POR CLASE .*/
+.activo{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#barril{
+    bottom: 2%;
+    left: 35%;
+    width: 150px;
+    position: absolute;
+    transform: rotate(18deg);
+    animation-name: barrilAnim;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+#barril img, #barril2 img, #personaje img, #logodk img{
+    width: 100%;
+}
+#barril2{
+    bottom: 2%;
+    right: 30%;
+    width: 150px;
+    position: absolute;
+    transform: rotate(-18deg);
+    animation-name: barrilFlip;
+    animation-duration: 10s;
+    transition: 0.5s ease-in-out all;
+}
+#personaje{
+    top: 0%;
+    left: 20%;
+    width: 200px;
+    position: absolute;
+    animation-name: changoAnim;
+    animation-duration: 10s;
+    transition: 0.5s ease-in-out all;
+}
+#logodk{
+    right: 2%;
+    top: 2%;
+    width: 150px;
+    position: absolute;
+    transition: 0.5s ease-in all;
+}
+#logodk:hover{
+    transform: scale(1.5);
+    cursor: pointer;
+    border-bottom: 2px solid white;
+    border-radius: 50px;
+}
+@keyframes changoAnim{
+    0%{
+        top: 0%;
+        left: 20%;
+        transform: rotate(0deg);
+    }
+    20%{
+        top: 10%;
+        left: 30%;
+        width: 250px;
+        transform: rotate(0deg);
+    }
+    30%{
+        top: 20%;
+        left: 40%;
+        width: 200px;
+        transform: rotate(0deg);
+    }
+    40%{
+        top: 45%;
+        left: 50%;
+        transform: rotate(0deg);
+    }
+    50%{
+        top: 60%;
+        left: 60%;
+        transform: rotate(0deg);
+    }
+    60%{
+        top: 70%;
+        left: 60%;
+        transform: rotate (0deg);
+    }
+    70%{
+        top: 70%;
+        left: 60%;
+        transform: rotate(-18deg);
+    }
+    80%{
+        top: 70%;
+        left: 60%;
+        transform: rotate(-630deg);
+    }
+    90%{
+        top: 70%;
+        left: 60%;
+        transform: rotate(0deg);
+    }
+    100%{
+        top: -30%;
+        left: 60%;
+        transform: rotate(0deg);
+    }
+}
+@keyframes barrilFlip{
+    0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 90%, 100%{bottom: 2%;
+        right: 30%;
+        transform: rotate(-18deg);}
+    80%{
+        bottom: 2%;
+        right: 30%;
+        transform: rotate(-630deg);
+    }
+}
+@keyframes barrilAnim{
+    /*from{
+        transform: rotate(18deg);
+    }
+    to{
+        transform: rotate(180deg);
+    }*/
+    0%{
+        transform: rotate(18deg);
+    }
+    50%{
+        transform: rotate(72deg);
+    }
+    100%{
+        transform: rotate(18deg);
+    }
+}
