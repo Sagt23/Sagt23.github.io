@@ -136,7 +136,74 @@ a.btn{
 #about .col p{
     margin-top: 50px;
 }
-#formulario{
-    width: 70%;
-    margin:50px
+#portafolio{
+    width: 100%;
+    margin:20px
+}
+#portafolio > h2{
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 8%;
+}
+#portafolio .items{
+    margin: 20px;
+}
+#portafolio .items .item{
+    width: 15%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.527);
+    display: inline-block;
+    margin: 70px;
+}
+#portafolio .items .item img{
+    width: 100%;
+}
+#portafolio .items .item h4, p{
+    margin-left: 15px
+}
+#portafolio .items .item .btnItem{
+    width: 80%;
+    height: 30px;
+    margin: 20px;
+    margin-left: 25px;
+    background-color: var(--main-color);
+    color: white;
+}
+#frase{
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/frase.png);
+}
+#frase h4{
+    color: white;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+#contacto{
+    height: 500px;
+    background-color: white;
+    display: inline-block;
+}
+#contacto .col{
+    margin: 30px;
+    width: 45%;
+}
+#contacto .col .btn{
+    align-items: center;
+    background-color: turquoise;
+    width: 80px;
+    height: 80%;
+    margin-left: 220px;
+}
+#io{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+#io h4{
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
 }
