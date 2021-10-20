@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Festive&family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="./css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -19,16 +21,21 @@
         <nav class="item">
             <ul>
                 <li>
-                    <a href="#">Inicio</a>
+                    <a href="#main" data-scroll>Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Sobre mí</a>
+                    <a href="#about" data-scroll>Sobre mí</a>
                 </li>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a href="#portafolio" data-scroll>Portafolio</a>
                 </li>
                 <li>
-                    <a href="#">Contacto</a>
+                    <a href="#io">Contacto</a>
+                </li>
+                <li>
+                    <a href="#" data-scroll>
+                        <i class="fas fa-bars"></i>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -38,10 +45,10 @@
             <source src="./img/takt.mp4" type="video/mp4"> 
         </video> 
         <div id="overlay">
-            <h2>
+            <h2 data-aos="fade-in"> 
                 Bienvenidos a mi Portafolio
             </h2>
-            <h3>
+            <h3 data-aos="fade-left">
                 Jose Abel Barraza <br>
                 Desarrollador Web
                 <br>
@@ -52,7 +59,7 @@
     <section id="about">
         <h2>About me</h2>
         <div class="col">
-            <img src="./img/personaje.png"/>
+            <img src="./img/personaje.png" data-aos="flip-left"/>
         </div>
         <div class="col">
             <h2>Abel Barraza</h2>
@@ -114,7 +121,7 @@
     </div>
     <div id="contacto">
         <div class="col">
-            Formulario
+            <h4>Contacto <i class="fas fa-user"></i></h4>
             <form action="">
                 <fieldset>
                     <label for="">Nombre</label>
@@ -145,5 +152,11 @@
         <h4>Abel Barraza Todos los derechos Reservados</h4>
         <h4>2021</h4>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      AOS.init();
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>  
 </body>
 </html>
