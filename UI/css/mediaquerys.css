@@ -1,0 +1,30 @@
+@media (max-width:500px){
+    header nav{
+        width: 50px;
+    }
+    header #menuMovil{
+        display: block;
+    }
+    header #menuWeb{
+        display: none;
+    }
+    #main #overlay h2{
+        margin-top: 100px;
+        font-size: 4rem;
+    }
+    #main #overlay h3{
+        font-size: 2rem;
+    }
+    #about .col, #contacto .col{
+        width: 100%;
+    }
+    #portafolio .item{
+        width: 100%;
+    }
+    #main video{
+        display: none;
+    }
+    #main #overlay{
+        background-image: url(../img/toga.jpg);
+    }
+}

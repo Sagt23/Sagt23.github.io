@@ -1,0 +1,9 @@
+#main video{
+    display: none;
+}
+body{
+    background-color: white;
+}
+#contacto .col .iframe{
+    display: none;
+}

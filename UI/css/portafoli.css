@@ -32,6 +32,9 @@ header nav{
     margin-right: 10%;
     width: 500px;
 }
+header #menuMovil{
+    display: none;
+}
 header nav ul li{
     float: left;
     list-style: none;
@@ -105,9 +108,9 @@ a.btn{
     text-decoration: none;
     color: white;
 }
-#about, #contacto{
+#about, #contacto, #portafolio{
     width: 80%;
-    height: 700px;
+    min-height: 700px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -136,10 +139,6 @@ a.btn{
 #about .col p{
     margin-top: 50px;
 }
-#portafolio{
-    width: 100%;
-    margin:20px
-}
 #portafolio > h2{
     font-size: 2rem;
     font-family: 'Open Sans', sans-serif;
@@ -153,7 +152,7 @@ a.btn{
     height: 100%;
     background-color: rgba(255, 255, 255, 0.527);
     display: inline-block;
-    margin: 70px;
+    margin: 50px;
 }
 #portafolio .items .item img{
     width: 100%;
