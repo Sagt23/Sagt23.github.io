@@ -1,0 +1,36 @@
+@media (max-width:500px){
+    header nav{
+        width: 50px;
+    }
+    header #menuMovil{
+        display: block;
+        list-style: none;
+    }
+    header #menuWeb{
+        display: none;
+    }
+    #main{
+        background-image: url(../img/steins.jpg);
+    }
+    #contacto .columna{
+        width: 100%;
+    }
+    #contacto .columna img{
+        width: 100%;
+    }
+    #main video{
+        display: none;
+    }
+    #tomos .items .item{
+        width: 90%;
+    }
+    #resumen{
+        height: 900px;
+    }
+    #resumen .columna{
+        width: 100%;
+    }
+    #resumen .columna p{
+        font-size: 1rem;
+    }
+}

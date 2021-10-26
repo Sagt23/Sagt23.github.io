@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="./css/pagina.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./css/querys.css">
+    <link rel="shortcut icon" href="./img/lab.jpg">
+</head>
+<body>
+    <header>
+        <div  id="titulo">
+            <h1>Steins:Gate</h1>
+        </div>
+        <nav>
+            <ul id="menuWeb">
+                <li>
+                    <a href="#main">Inicio</a>
+                </li>
+                <li>
+                    <a href="#tomos">Tomos</a>
+                </li>
+                <li>
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+            <ul id="menuMovil">
+                <li>
+                    <a href="#" data-scroll>
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="main">
+        <video autoplay muted playsinline loop preload="auto">
+            <source src="./img/steins.mp4" type="video/mp4">
+        </video>
+    </section>
+    <div id="tomos">
+        <h2>Tomos <i class="fas fa-book-open"></i></h2>
+        <br>
+        <br>
+        <div class=items>
+            <div class="item">
+                <img src="./img/logo.jpg" alt="">
+                <div class="itemContent">
+                    <h4>Tomo 1</h4>
+                    <p>Escritor: Yomi Sarachi
+                        <br>
+                        Cap. 0-6
+                    </p>
+                    <br>
+                    <a href="./tomo1.html"><button class="btnItem">Ver Tomo</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/logo.jpg" alt="">
+                <div class="itemContent">
+                    <h4>Tomo 2</h4>
+                    <p>Escritor: Yomi Sarachi
+                        <br>
+                        Cap. 7-15
+                    </p>
+                    <br>
+                    <a href="./tomo2.html"><button class="btnItem">Ver Tomo</button></a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./img/logo.jpg" alt="">
+                <div class="itemContent">
+                    <h4>Tomo 3</h4>
+                    <p>Escritor: Yomi Sarachi
+                        <br>
+                        Cap. 16-22
+                    </p>
+                    <br>
+                    <a href="./tomo3.html"><button class="btnItem">Ver Tomo</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contacto">
+        <div class="columna">
+            <h2>Contacto <i class="fas fa-user"></i></h2>
+            <form action="">
+                <fieldset>
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Nombre">
+                </fieldset>      
+                <fieldset>
+                    <label for="">Email</label>
+                    <input type="text" placeholder="Email">
+                </fieldset>
+                <fieldset>
+                    <label for="">Teléfono</label>
+                    <input type="text" placeholder="Teléfono">
+                </fieldset>
+                <fieldset>
+                    <label for="">Comentario</label>
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                </fieldset>
+                <fieldset>
+                    <button class="btn">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="columna">
+            <img src="./img/gate.jpg" alt="">
+        </div>
+    </div>
+    <footer id="io">
+        <h2>Abel Barraza Todos los derechos Reservados</h2>
+        <h2>2021</h2>
+        <br>
+        <h2>El Psy Congroo</h2>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      AOS.init();
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+</body>
+</html>

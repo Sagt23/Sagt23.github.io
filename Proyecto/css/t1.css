@@ -1,0 +1,71 @@
+:root{
+    --main-color:#3f4d53;
+    --text-color: #101314;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(192, 189, 185);
+    font-family: 'Zen Kurenaido', sans-serif;
+}
+h1, h2{
+    font-family: 'Zen Antique Soft', serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.938);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 4;
+}
+header #menuMovil{
+    display: none;
+}
+header #titulo{
+    margin-left: 10%;
+    font-size: 1.3rem;
+}
+header nav{
+    margin: 10px;
+    margin-right: 10%;
+    width: 500px;
+}
+header nav ul{
+    font-size: 2rem;
+    margin-left: 100%;
+    margin-top: 5px;
+}
+#resumen{
+    width: 80%;
+    height: 500px;
+    min-height: 700px;
+    background-color: rgb(59, 55, 55);
+    display: inline-block;  
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#resumen .columna{
+    margin: 30px;
+    width: 40%;
+    float: left;
+    text-align: justify;
+}
+#resumen .columna p{
+    font-family: 'Zen Kurenaido', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+}
+#io{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+}
+#io h2{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+}
