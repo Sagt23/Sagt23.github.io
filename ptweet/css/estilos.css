@@ -1,0 +1,53 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+fieldset{
+    border-style: none;
+}
+input{
+    width: 100%;
+    border-color: violet;
+    height: 30px;
+    margin-bottom: 5%;
+}
+button{
+    background-image: url(../img/peluchemorado.jpg);
+    color: rgb(236, 236, 29);
+    width: 120px;
+    height: 30px;
+    border-radius: 8px;
+    border-color: rgb(236, 236, 29);
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+main .col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 100vh;
+}
+main .col:first-child{
+    flex: 2;
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+}
+main .col h3{
+    font-size: 1.2rem;
+    margin-left: 5%;
+}
+main .col .formulario{
+    margin-left: 6%;
+    width: 90%;
+    margin-top: 5%;
+}
+main .col img{
+    width: 55%;
+    margin-left: 40%;
+    margin-top: 20%;
+}
